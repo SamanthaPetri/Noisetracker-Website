@@ -1,14 +1,15 @@
 {
   "name": "sit725-2022-t1-prac5",
   "version": "1.0.0",
-  "description": "week 5 prac for sit725 2022",
+  "description": "week 6 prac for sit725 2022",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamanthaPetri/sit725-2022-t1-prac5.git"
+    "url": "git+https://github.com/SamanthaPetri/sit725-2022-t1-prac6.git"
   },
   "keywords": [
     "express",
@@ -17,14 +18,17 @@
   "author": "Samantha Petri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SamanthaPetri/sit725-2022-t1-prac5/issues"
+    "url": "https://github.com/SamanthaPetri/sit725-2022-t1-prac6/issues"
   },
-  "homepage": "https://github.com/SamanthaPetri/sit725-2022-t1-prac5#readme",
+  "homepage": "https://github.com/SamanthaPetri/sit725-2022-t1-prac6#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "mocha": "^9.2.2",
     "mongodb": "^4.4.1",
-    "nodejs": "^0.0.0"
+    "nodejs": "^0.0.0",
+    "request": "^2.88.2"
   }
 }

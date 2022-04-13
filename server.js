@@ -25,5 +25,4 @@ app.use('/api/user',userRoute)
 
     app.listen(port, () => {
         console.log("App listening to: " + port)
-        //createColllection("pets")
     })

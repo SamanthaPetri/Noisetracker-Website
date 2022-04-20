@@ -1,5 +1,5 @@
-# sit725-2022-t1-prac6
-This is a basic Node Express application to host a web application. It demonstrates the creation of a simple express app and creates a few APIs to create changes to data. An API is used for testing.
+# sit725-2022-t1-noisetracker
+This is an application to lodge noise complaints.
 
 # Pre-requisite
 Node.js
@@ -17,4 +17,4 @@ $ npm run test
 ...
 
 # Copyrights
-Copyright (c) 2022 Samantha Petri
+Copyright (c) 2022 Angela Corriero, Claire Bantilan, Samantha Petri

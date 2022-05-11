@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
+console.log("test first commit angela");
+
 //Database connection
 const uri = "mongodb+srv://"+process.env.MONGO_USER+":"+process.env.MONGO_PASSWORD+"@cluster0.d4rqo.mongodb.net/SIT725?retryWrites=true&w=majority" //uses env
 const client = new MongoClient(uri, { useNewUrlParser: true })

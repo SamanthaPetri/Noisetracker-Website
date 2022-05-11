@@ -55,7 +55,6 @@ body {
     padding-left: 0px;
   }
   ::placeholder {
-    text-transform: uppercase;
     top: -65px;
     color: rgb(0, 0, 0);
   }
@@ -122,10 +121,31 @@ body {
   .signin:focus {
     outline: none;
   }
+  .create {
+    background-color: #142e68;
+    color: rgba(255, 255, 255, 0.767);
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 39px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+  }
+  .create:hover {
+    background: #142e68;
+    box-shadow: 0px 4px 35px -5px #142e68;
+    cursor: pointer;
+  }
+  .create:focus {
+    outline: none;
+  }
   hr {
     border: 1px solid rgba(255, 255, 255, 0.74);
-    color:#fff;
-    top: 85px;
+    background-color:#fff;
+    top: 50px;
     position: relative;
   }
   a {

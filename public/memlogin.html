@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Mornington Peninsula - Noise Tracker Home</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      name="viewport"
+    />
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-dashboard.css" rel="stylesheet" />
+    <link href="assets/css/demo-documentation.css" rel="stylesheet" />
+    <style media="screen">
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* ---------horizontal-navbar-menu-----------*/
+      #nav-row {
+        background: #142e68;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        padding: 10px 10px;
+        width: 100%;
+      }
+      body,
+    .signin {
+        background-color: #d3d3d3;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .login {
+        position: relative;
+        height: 640px;
+        width: 405px;
+        margin: auto;
+        padding: 60px 60px;
+        background: url("https://www.rastanley.com.au/img/products/new/M/70870_M.jpg") no-repeat   center center #505050;   
+        background-size: cover;
+        opacity: 0.8;
+        box-shadow: 0px 30px 60px -5px #000;
+      }
+      form {
+        padding-top: 80px;
+      }
+      .active {
+        border-bottom: 2px solid #142e68;
+      }
+      .nonactive {
+        color: rgba(255, 255, 255, 0.637);
+      }
+      h2 {
+        padding-left: 12px;
+        font-size: 22px;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        letter-spacing: 2px;
+        display: inline-block;
+        font-weight: 100;
+      }
+      h2:first-child {
+        padding-left: 0px;
+      }
+      ::placeholder {
+        text-transform: uppercase;
+        top: -65px;
+        color: rgb(0, 0, 0);
+      }
+      .text {
+        width: 89%;
+        padding: 10px 20px;
+        display: block;
+        height: 15px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.623);
+        border: 2px solid rgba(255, 255, 255, 0);
+        overflow: hidden;
+        margin-top: 15px;
+        transition: all 0.5s ease-in-out;
+      }
+      .text:focus {
+        outline: 0;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.87);
+      }
+      .text:focus + span {
+        opacity: 0.8;
+      }
+      input[type="text"],
+      input[type="password"] {
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(10, 10, 10);
+      }
+      input {
+        display: inline-block;
+        padding-top: 10px;
+        font-size: 14px;
+      }
+      h2,
+      span,
+      .custom-checkbox {
+        margin-left: 20px;
+        color: rgb(2, 2, 2);
+      }
+      label {
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 5px;
+      }
+      .signin {
+        background-color: #142e68;
+        color: rgba(255, 255, 255, 0.767);
+        width: 100%;
+        padding: 10px 20px;
+        display: block;
+        height: 39px;
+        border-radius: 20px;
+        margin-top: 30px;
+        transition: all 0.5s ease-in-out;
+        border: none;
+        text-transform: uppercase;
+      }
+      .signin:hover {
+        background: #142e68;
+        box-shadow: 0px 4px 35px -5px #142e68;
+        cursor: pointer;
+      }
+      .signin:focus {
+        outline: none;
+      }
+      hr {
+        border: 1px solid rgba(255, 255, 255, 0.74);
+        color:#fff;
+        top: 85px;
+        position: relative;
+      }
+      a {
+        text-align: center;
+        display: block;
+        top: 120px;
+        position: left;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+    <div id="nav-row">
+      <a href="index.html">
+        <img
+          src="assets/img/sprite-logo-mps copy.png"
+          alt="Noise Tracker" width="50px" style="float:left"
+        /></a>
+      </div>
+    </div>
+    </nav>
+    <br><br><br><br>
+    <div class="login">
+      <h2 class="active"> council sign in </h2>
+      <form>
+        <input type="text" class="text" name="username" placeholder="Username">
+        <br><br>
+        <input type="password" class="text" name="password" placeholder="Password">
+        <br>
+        <button class="signin">
+          Sign In
+        </button>
+        <button class="signin">
+          Create Account
+        </button>
+        <hr>
+        <a href="#">Forgot Password?</a>
+      </form>
+    
+    </div>
+    <footer class="footer footer-transparent">
+      <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="https://"> About Us </a>
+            </li>
+            <li><a href="http://"> Blog </a></li>
+            <li>
+              <a href="https://"> Licenses </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!--   Core JS Files   -->
+  <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script>
+    var header_height;
+    var fixed_section;
+    var floating = false;
+
+    $().ready(function () {
+      suggestions_distance = $("#suggestions").offset();
+      pay_height = $(".fixed-section").outerHeight();
+
+      $(window).on("scroll", md.checkScrollForTransparentNavbar);
+      demo.initDocumentationCharts();
+    });
+  </script>
+</html>

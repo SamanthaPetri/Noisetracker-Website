@@ -36,56 +36,101 @@
     <link href="css/register.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <nav></nav>
-    <main class="main-body">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h1 id="heading">Welcome</h1>
-            <p class="flow-text">Choose your action:</p>
-          </div>
+  <body style="background-image: url('img/mps.jpeg')">
+    <nav>
+      <div id="nav-row">
+        <a href="index.html">
+          <img
+            src="img/sprite-logo-mps copy.png"
+            alt="Noise Tracker" width="50px" style="float:left"
+          /></a>
+      </div>
+    </nav>
+    <br><br><br><br>
+    <main>
+      <div id="login-box">
+        <div class="left">
+          <h1>Welcome user! </h1> <!--NEEDS CUSTOM USERNAME ADDED-->
+          <h2>Please select an action:</h2>
           <a
             href="newcomplaint.html"
-            class="btn btn-rose btn-fill btn-round"
-            target="_blank"
-          >
+            class="btn"
+            target="_blank">
             Register Noise Complaint
           </a>
-          <br /><br />
+          <br/>
           <a
             href="complaintstatus.html"
-            class="btn btn-rose btn-fill btn-round"
-            target="_blank"
-          >
+            class="btn"
+            target="_blank">
             Track Progress of Complaint
           </a>
-          <br /><br />
+          <br/>
           <a
             href="editcomplaint.html"
-            class="btn btn-rose btn-fill btn-round"
-            target="_blank"
-          >
+            class="btn"
+            target="_blank">
             Add Evidence to a Complaint
           </a>
-          <br /><br />
+          <br/>
           <a
             href="deletecomplaint.html"
-            class="btn btn-rose btn-fill btn-round"
-            target="_blank"
-          >
+            class="btn"
+            target="_blank">
             Withdraw Complaint
           </a>
         </div>
+        <div class="right">
+          <br>
+          <img
+            src="img/wave.png"
+            alt="Wave" width="200px" style="float:right"
+            /></a>
+        </div>
+    </main> 
+        <footer class="footer footer-transparent">
+      <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="https://"> About Us </a>
+            </li>
+            <li><a href="http://"> Blog </a></li>
+            <li>
+              <a href="https://"> Licenses </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </div>
       </div>
-    </main>
+    </footer>
     <!--   Core JS Files   -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render('my-signin2', {
+          'scope': 'profile email',
+          'width': 240,
+          'height': 50,
+          'longtitle': true,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+      }
+    </script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
   </body>
 </html>

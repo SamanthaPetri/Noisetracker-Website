@@ -1,5 +1,4 @@
-
-  /* ---------horizontal-navbar-menu-----------*/
+/* ---------CSS Styles-----------*/
   #nav-row {
     background: #142e68;
     float: left;
@@ -32,6 +31,16 @@
     font-weight: 100;
     border-bottom: 2px solid #142e68;
   }
+
+  h2 {
+    padding-left: 12px;
+    font-size: 19px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+    border-bottom: 2px solid #142e68;
+  }
   hr {
     border: 1px solid #142e68(255, 255, 255, 0.74);
     background-color:#142e68;
@@ -52,7 +61,7 @@
     left: 0;
     box-sizing: border-box;
     padding: 40px;
-    width: 300px;
+    width: 500px;
     height: 400px;
   }
   
@@ -148,6 +157,18 @@
     color: #FFF;
     text-align: center;
   }
+
+.btn {
+  background-color: #142e68;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
   footer {
     color: rgb(212, 212, 212);
   }

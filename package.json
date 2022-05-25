@@ -22,11 +22,18 @@
   },
   "homepage": "https://github.com/SamanthaPetri/sit725-2022-t1-noisetracker#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
     "mongodb": "^4.4.1",
+    "mongoose": "^6.3.4",
     "nodejs": "^0.0.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2",
     "request": "^2.88.2"
   }
 }

@@ -64,7 +64,9 @@ const addCards = (items) => {
         '<td>'+item.myfile+'</td>'+
         '<td>'+item.status+'</td>'+
         '<td>'+item._id+'</td>'+
-    //    '<td>'+item._id+'</td>'+
+        '<td><input type="submit" class="button" value="Edit" onclick="addField(this);" />'+
+        '<input type="submit" class="button" value="Delete" onclick="addField(this);" />'+
+        '</td>'+
     '</tr>';
       $("#complaints").append(itemToAppend)
     });

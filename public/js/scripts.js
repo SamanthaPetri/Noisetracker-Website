@@ -47,7 +47,18 @@ const getProjects = () => {
         }
     })
 }
+function deleteComplaint(id){
 
+    console.log("Deleted ", id.alt)
+    alert("Deleted "+ id.alt)
+
+}
+
+function editComplaint(id){
+    console.log("Updated ", id.alt)
+    alert("Updated "+ id.alt)
+
+}
 const addCards = (items) => {
     items.forEach(item => {
         let itemToAppend = '<tr>'+
@@ -64,13 +75,14 @@ const addCards = (items) => {
         '<td>'+item.myfile+'</td>'+
         '<td>'+item.status+'</td>'+
         '<td>'+item._id+'</td>'+
-        '<td><input type="submit" class="button" value="Edit" onclick="addField(this);" />'+
-        '<input type="submit" class="button" value="Delete" onclick="addField(this);" />'+
+        '<td><input type="submit" class="button" value="Edit"alt="'+item._id+'" onclick="editComplaint(this);" />'+
+        '<input type="submit" class="button" alt="'+item._id+'" value="Delete" onclick="deleteComplaint(this);" />'+
         '</td>'+
     '</tr>';
       $("#complaints").append(itemToAppend)
     });
 }
+
 
 
 $(document).ready(function(){

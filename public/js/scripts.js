@@ -3,6 +3,17 @@ const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
 }
 
+// const deleteProjects = (project) => {
+//     $.get({
+//         url: '/api/projects',
+//         data: project,
+//         type: 'GET',
+//         success: (result) => {
+//             alert(result.message);
+//             location.reload();
+//         }
+//     })
+// }
 const addProjectToApp = (project) => {
     $.ajax({
         url: '/api/projects',
@@ -51,6 +62,7 @@ function deleteComplaint(id){
 
     console.log("Deleted ", id.alt)
     alert("Deleted "+ id.alt)
+    //deleteProjects(id.alt)
 
 }
 

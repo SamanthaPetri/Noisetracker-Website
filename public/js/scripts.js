@@ -50,18 +50,21 @@ const getProjects = () => {
 
 const addCards = (items) => {
     items.forEach(item => {
-        let itemToAppend = '<tr>'+'<th>'+item.firstname+'</th>'+
-        '<th>'+item.surname+'</th>'+
-        '<th>'+item.email+'</th>'+
-        '<th>'+item.phone+'</th>'+
-        '<th>'+item.address+'</th>'+
-        '<th>'+item.date+'</th>'+
-        '<th>'+item.stime+'</th>'+
-        '<th>'+item.etime+'</th>'+
-        '<th>'+item.frequency+'</th>'+
-        '<th>'+item.subject+'</th>'+
-        '<th>'+item.myfile+'</th>'+
-        '<th>'+item.status+'</th>'+
+        let itemToAppend = '<tr>'+
+        '<td>'+item.firstname+'</td>'+
+        '<td>'+item.surname+'</td>'+
+        '<td>'+item.email+'</td>'+
+        '<td>'+item.phone+'</td>'+
+        '<td>'+item.address+'</td>'+
+        '<td>'+item.date+'</td>'+
+        '<td>'+item.stime+'</td>'+
+        '<td>'+item.etime+'</td>'+
+        '<td>'+item.frequency+'</td>'+
+        '<td>'+item.subject+'</td>'+
+        '<td>'+item.myfile+'</td>'+
+        '<td>'+item.status+'</td>'+
+        '<td>'+item._id+'</td>'+
+    //    '<td>'+item._id+'</td>'+
     '</tr>';
       $("#complaints").append(itemToAppend)
     });

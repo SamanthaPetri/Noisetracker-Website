@@ -26,6 +26,7 @@ const addProjectToApp = (project) => {
     })
 }
 
+
 const submitForm = () => {
     let formData = {};
     formData.firstname = $('#firstname').val();
@@ -45,6 +46,9 @@ const submitForm = () => {
     addProjectToApp(formData);
 
 }
+
+
+
 
 
 const getProjects = () => {
@@ -104,3 +108,4 @@ $(document).ready(function(){
      getProjects();
     // $('.modal').modal();
   });
+

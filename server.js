@@ -5,6 +5,7 @@ var cors = require("cors")
 var port = process.env.port || 8000;
 let dbConnect = require("./dbConnect");
 let projectRoute = require("./routes/projectRoute");
+let userRoute = require("./routes/userRoute");
 const session = require("express-session");
 
 
@@ -15,8 +16,7 @@ app.use(cors());
 
 
 app.use('/api/projects',projectRoute)
-//app.use('/api/auth', auth)
-//app.use('/api/user',userRoute)
+app.use('/api/user',userRoute)
 
 
 

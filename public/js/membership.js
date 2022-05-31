@@ -19,7 +19,21 @@ const createUserForm = () => {
     formData.phone = $('#phone').val();
     formData.password = $('#password').val();
     formData.password2 = $('#password2').val();
-    formData.status = 'New';
+    formData.type = 'Resident';
+
+    console.log("Form Data Submitted: ", formData);
+    addUserToApp(formData);
+
+}
+const createAdminForm = () => {
+    let formData = {};
+    formData.firstname = $('#firstname').val();
+    formData.surname = $('#surname').val();
+    formData.email = $('#email').val();
+    formData.phone = $('#phone').val();
+    formData.password = $('#password').val();
+    formData.password2 = $('#password2').val();
+    formData.type = 'Admin';
 
     console.log("Form Data Submitted: ", formData);
     addUserToApp(formData);
@@ -43,6 +57,10 @@ const getUser = () => {
     $('#createUserForm').click(()=>{
         createUserForm();
     })
-     //getProjects();
-    // $('.modal').modal();
+  });
+
+  $(document).ready(function(){
+    $('#createAdminForm').click(()=>{
+        createAdminForm();
+    })
   });

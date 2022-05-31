@@ -57,10 +57,13 @@ const getUser = () => {
     $('#createUserForm').click(()=>{
         createUserForm();
     })
-  });
-
-  $(document).ready(function(){
     $('#createAdminForm').click(()=>{
         createAdminForm();
     })
+    $('#login').click(()=>{
+        getUser();
+    })
+
+    getUser();
   });
+

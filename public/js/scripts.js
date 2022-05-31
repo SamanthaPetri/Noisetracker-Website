@@ -77,8 +77,7 @@ function editComplaint(id){
 }
 const addCards = (items) => {
     items.forEach(item => {
-        let itemToAppend = '<tr>'+
-        '<td>'+item.firstname+'</td>'+
+        let itemToAppend = '<tr>'+ '<td>'+item.firstname+'</td>'+
         '<td>'+item.surname+'</td>'+
         '<td>'+item.email+'</td>'+
         '<td>'+item.phone+'</td>'+

@@ -90,8 +90,9 @@ const addCards = (items) => {
         '<td>'+item.myfile+'</td>'+
         '<td>'+item.status+'</td>'+
         '<td>'+item._id+'</td>'+
-        '<td><input type="submit" class="button" value="Edit"alt="'+item._id+'" onclick="editComplaint(this);" />'+
-        '<input type="submit" class="button" alt="'+item._id+'" value="Delete" onclick="deleteComplaint(this);" />'+
+        '<td>'+
+        '<input type="submit" class="btn btn-success" value="Edit"alt="'+item._id+'" onclick="editComplaint(this);" /><br>'+
+        '<input type="submit" class="btn btn-danger" alt="'+item._id+'" value="Delete" onclick="deleteComplaint(this);" />'+
         '</td>'+
     '</tr>';
       $("#complaints").append(itemToAppend)

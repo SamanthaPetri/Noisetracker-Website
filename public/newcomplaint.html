@@ -40,7 +40,7 @@
   <body style="background-image: url('img/rocks.jpg'); background-repeat: no-repeat;background-size: cover;">
     <nav>
       <div id="nav-row">
-        <a href="index.html">
+        <a href="reshome.html">
           <img
             src="img/sprite-logo-mps copy.png"
             alt="Noise Tracker" width="50px" style="float:left"
@@ -53,12 +53,12 @@
         <div class="left">
           <h1>Register new complaint</h1>
           <h2>Please fill in the details below:</h2>
-          <form>
+          <form action="">
             <label for="personal">Personal Details:</label>
-              <input type="text" id="firstname" placeholder="First Name" />
-              <input type="text" id="surname" placeholder="Last Name" />
-              <input type="text" id="email" placeholder="E-mail" />
-              <input type="text" id="phone" placeholder="Phone number" />
+              <input type="text" id="firstname" placeholder="First Name" required/>
+              <input type="text" id="surname" placeholder="Last Name" required/>
+              <input type="text" id="email" placeholder="E-mail" required/>
+              <input type="text" id="phone" placeholder="Phone number" required/>
               <label for="address">Address of Disturbance:</label>
               <input type="text" id="address" name="address" placeholder="Enter Address">
               <label for="date">Date of Disturbance:</label>
@@ -68,7 +68,7 @@
               <label for="etime">End Time of Disturbance:</label>
               <input type="time" id="etime" name="etime">
               <label for="solve">How many times has the disturbance occured?</label>
-              <select id="frequency" name="solve">
+              <select id="frequency" name="solve" required>
                 <option value="1">1 time</option>
                 <option value="2">2 times</option>
                 <option value="3">3 times</option>
@@ -79,7 +79,8 @@
               <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea>
               <label for="myfile">Select a file to provide further evidence (*optional):</label>
               <input type="file" id="myfile" name="myfile">
-              <button class="btn" id="formSubmit">Log Complaint</button>
+              <button class="btn" id="formSubmit" type="submit">Log Complaint</button>
+              <!-- <button class="btn" id="createUserForm">Log Complaint</button> -->
           </form><br><br>
           
         </div>

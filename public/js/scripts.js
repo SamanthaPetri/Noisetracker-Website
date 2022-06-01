@@ -26,6 +26,7 @@ const addProjectToApp = (project) => {
     })
 }
 
+
 const submitForm = () => {
     let formData = {};
     formData.firstname = $('#firstname').val();
@@ -45,6 +46,9 @@ const submitForm = () => {
     addProjectToApp(formData);
 
 }
+
+
+
 
 
 const getProjects = () => {
@@ -73,8 +77,7 @@ function editComplaint(id){
 }
 const addCards = (items) => {
     items.forEach(item => {
-        let itemToAppend = '<tr>'+
-        '<td>'+item.firstname+'</td>'+
+        let itemToAppend = '<tr>'+ '<td>'+item.firstname+'</td>'+
         '<td>'+item.surname+'</td>'+
         '<td>'+item.email+'</td>'+
         '<td>'+item.phone+'</td>'+
@@ -87,8 +90,9 @@ const addCards = (items) => {
         '<td>'+item.myfile+'</td>'+
         '<td>'+item.status+'</td>'+
         '<td>'+item._id+'</td>'+
-        '<td><input type="submit" class="button" value="Edit"alt="'+item._id+'" onclick="editComplaint(this);" />'+
-        '<input type="submit" class="button" alt="'+item._id+'" value="Delete" onclick="deleteComplaint(this);" />'+
+        '<td>'+
+        '<input type="submit" class="btn btn-success" data-toggle="modal" data-target="#modifyModal" value="Edit"alt="'+item._id+'" onclick="@editComplaint(this);" /><br>'+
+        '<input type="submit" class="btn btn-danger" alt="'+item._id+'" data-toggle="modal" data-target="#deleteModal" value="Delete" onclick="@deleteComplaint(this);" />'+
         '</td>'+
     '</tr>';
       $("#complaints").append(itemToAppend)
@@ -104,3 +108,4 @@ $(document).ready(function(){
      getProjects();
     // $('.modal').modal();
   });
+

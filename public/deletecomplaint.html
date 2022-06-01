@@ -36,7 +36,7 @@
   <body style="background-image: url('img/rocks.jpg'); background-repeat: no-repeat;background-size: cover;">
     <nav>
       <div id="nav-row">
-        <a href="index.html">
+        <a href="reshome.html">
           <img
             src="img/sprite-logo-mps copy.png"
             alt="Noise Tracker" width="50px" style="float:left"
@@ -50,9 +50,19 @@
           <h1>Withdraw a complaint</h1>
           <h2>Select the complaint you would like to withdraw:</h2>
           <!--ADD AREA FOR COMPLAINT SELECTION-->
-          <br><br><br><br>
+          <br><br>
+          <form action="reshome.html">
+            <label for="solve">Complaint #:</label>
+              <select id="solve" name="solve">
+                <option value=""></option>
+                <option value="">ID#6296c85e13698c2409ccd070</option>
+                <option value="">ID#6296c8e613698c2409ccd071</option>
+                <option value="">ID#6296c93b13698c2409ccd072</option>
+              </select><br><br>
           <h2>WARNING: This cannot be undone</h2>
-          <button class="btn">Delete Complaint</button>
+          
+          <button class="btn" type submit>Delete Complaint</button>
+        </form>
         </div>
       </div>
     </main>

@@ -36,7 +36,7 @@
   <body style="background-image: url('img/rocks.jpg'); background-repeat: no-repeat;background-size: cover;">
     <nav>
       <div id="nav-row">
-        <a href="index.html">
+        <a href="reshome.html">
           <img
             src="img/sprite-logo-mps copy.png"
             alt="Noise Tracker" width="50px" style="float:left"
@@ -51,7 +51,7 @@
           <h2>Select the complaint you would like to edit:</h2>
           <!--ADD AREA FOR COMPLAINT SELECTION-->
           <h2>Fill in the details below to add evidence to your complaint:</h2>
-          <form>
+          <form action="reshome.html">
               <label for="solve">How many times has the disturbance occured?</label>
               <select id="solve" name="solve">
                 <option value="australia">1 time</option>
@@ -61,11 +61,12 @@
                 <option value="canada">5 or more times</option>
               </select>
               <label for="subject">Please provide any further details:</label>
-              <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea>
+              <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px" required></textarea>
               <label for="myfile">Select a file to provide further evidence (*optional):</label>
               <input type="file" id="myfile" name="myfile">
-          </form><br><br>
-          <button class="btn">Save changes to Complaint</button>
+          <br><br>
+          <button class="btn" type="submit">Save changes to Complaint</button>
+        </form>
         </div>
       </div>
     </main>

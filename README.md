@@ -1,4 +1,4 @@
-# sit725-2022-t1-noisetracker
+# Noisetracker Website
 This is an application to lodge noise complaints.
 
 # Pre-requisite

@@ -17,4 +17,4 @@ $ npm run test
 ...
 
 # Copyrights
-Copyright (c) 2022 Angela Corriero, Claire Bantilan, Samantha Petri
+Copyright (c) 2022 Samantha Petri, Angela Corriero, Claire Bantilan
